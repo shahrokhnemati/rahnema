@@ -1,9 +1,9 @@
 import random
 
-def alphabet_game_name():
-    names = ["Alice", "Bob", "Charlie", "David", "Emily", "Frank", "Grace", "Henry", "Isabella", "Jack",
-             "Katie", "Liam", "Mia", "Noah", "Olivia", "Peter", "Quinn", "Ryan", "Sophia", "Thomas",
-             "Uma", "Victoria", "William", "Xavier", "Yasmine", "Zachary"]
+def fam_game():
+    names = ["Ali", "newyork", "mina", "mona", "Emily", "abi", "ghermez", "sabz", "nooshabe", "doogh",
+             "amin", "amir", "tehran", "amrica", "iran", "Peter", "zard", "kerman", "yazd", "shiraz",
+             "saber", "reza", "ghormesabzi", "pasta", "yasaman", "Zachary"]
 
     chosen_name = random.choice(names)
 
@@ -24,7 +24,7 @@ def alphabet_game_name():
 
         if user_input.lower().startswith(chosen_name[0].lower()):
             print("Correct!")
-            score += 1
+            score += 10
             chosen_name = random.choice(names)
         else:
             print("Wrong! Try again.")
@@ -32,4 +32,4 @@ def alphabet_game_name():
     print("Final Score:", score)
     print("Thanks for playing!")
 
-alphabet_game_name()
+fam_game()
